@@ -1,13 +1,69 @@
-body{
-
-margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.box{
-    border: 5px solid;
-    font-size: 5em;
-    width: 250px;
-    height: 250px;
+body {  
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-weight: bold;
+}
 
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: minmax(75px,auto);
+    gap: 5px;
+}
 
+.box, .box1, .box2, .box3, .box4, footer {
+    background-color: rgb(233, 180, 8);
+    color: black;
+    font-size: 3.rem;
+    padding: 0.5rem;
+    height: 70px;
+}
+
+.box:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(243, 204, 28);
+}
+
+.box:nth-child(2),.box:nth-child(3),.box:nth-child(4) {
+    background-color: rgb(94, 170, 233);
+}
+
+.box1 {
+    background-color: rgb(226, 181, 241);
+}
+
+.box4 {
+    background-color: rgb(110, 155, 240);
+    
+    
+}
+.box2:nth-child(1) {
+    background-color:  rgb(131, 226, 194);
+    height: 350px;
+}   
+.box2:nth-child(2) {
+
+    background-color: rgb(206, 198, 199);
+}
+.box2:nth-child(3) {
+    background-color: rgb(241, 241, 62);
+}
+.box3:nth-child(1){
+    background-color: orange;
+}
+.box3:nth-child(2){
+    background-color: green;
+}
+.box3:nth-child(3){
+    background-color: violet;
+}
+footer {
+    background-color: gray;
 }
